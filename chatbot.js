@@ -1,5 +1,5 @@
 var TelegramBot = require('node-telegram-bot-api'); //importing the package
-var token = '739892719:AAFGPNHFLnHvHDrHk7S-YsieRpYJA_Ib10M';
+var token = 'your api key token';
 var bot = new TelegramBot(token, {polling: true});
  bot.on('message',function(msg){
  bot.onText(/\/start/, (msg) => {
@@ -13,7 +13,7 @@ if(msg.text.indexOf(sendpic)===0){
 
 var contact="contact number";
 if(msg.text.indexOf(contact)===0){
-	bot.sendContact(msg.chat.id,7997661804,msg.chat.first_name)
+	bot.sendContact(msg.chat.id,your number,msg.chat.first_name)
 }
   var location = "facebook";
     if (msg.text.indexOf(location) === 0) {
